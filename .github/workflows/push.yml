@@ -7,6 +7,7 @@ on:
 
 jobs:
   push:
+    name: DNSControl Push
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
