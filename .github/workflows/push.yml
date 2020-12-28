@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - master
+    paths:
+    - 'dnsconfig.js'
+    - 'creds.json'
 
 jobs:
   push:
