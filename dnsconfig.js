@@ -15,6 +15,11 @@ var CLOUDFLARE = NewDnsProvider('cloudflare','CLOUDFLAREAPI');
 
 D('csci.app', REG_NONE, DnsProvider(CLOUDFLARE),
 
-  ALIAS('@', 'floogulinc.github.io.')
+  ALIAS('@', 'floogulinc.github.io.'),
+
+  // sslip.io wildcard DNS
+  NS('ip', 'ns-aws.nono.io.'),
+  NS('ip', 'ns-gce.nono.io.'),
+  NS('ip', 'ns-azure.nono.io.')
 
 );
