@@ -3,18 +3,7 @@ name: Check
 on: pull_request
 
 jobs:
-  eslint:
-    name: ESLint
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Run ESLint
-        uses: koenrh/actions/eslint@master
-        with:
-          args: dnsconfig.js
-
-  check:
+ check:
     name: DNSControl Check
     runs-on: ubuntu-latest
     steps:
